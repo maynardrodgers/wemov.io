@@ -17,7 +17,7 @@ reveal = function() {
 }
 
 window.onload = function() {
-  $.ajax({url: "https://api.critterland.world/tot/info", success: function(result){
+  $.ajax({url: "https://api.wemov.io/tot/info", success: function(result){
     $('#id_tot_distance').html(result.totDistance*1000);
     $('#id_tot_user').html(result.totRuns);
     $('#id_tot_kr').html(result.totKr);
