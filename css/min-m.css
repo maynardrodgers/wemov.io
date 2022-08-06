@@ -151,7 +151,18 @@ h4.des {
 .distance-140 {
     margin-top: 140px;
 }
-
+.data-row > .des.specal {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 2px -2px 2px rgb(255 255 255 / 10%), inset -2px 2px 2px rgb(255 255 255 / 20%);
+    backdrop-filter: blur(64px);
+    border-radius: 25px;
+    color: #DADFF1;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 20px 25px;
+    display: inline-block;
+}
 .body {
     margin: 0px 20px;
 }
