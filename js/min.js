@@ -16,6 +16,11 @@ reveal = function() {
   }
 }
 
+window.onscroll = function() {
+  setTimeout(function(){ reveal(); }, TIME_OUT);
+}
+
+
 window.onload = function() {
   $.ajax({url: "https://api.wemov.io/tot/info", success: function(result){
     $('#id_tot_distance').html(result.totDistance*1000);
@@ -57,6 +62,8 @@ var swiper = new Swiper( '.swiper-container.two', {
   loop: true,
   centeredSlides: true,
   slidesPerView: 'auto',
+  preloadImages: false,
+  lazy: true,
   coverflow: {
     rotate: 0,
     stretch: 100,
