@@ -16,7 +16,8 @@ a, a:active, a:visited, a:hover {
 .font-allan {
     font-family: 'Allan';
 }
-body::-webkit-scrollbar-track{
+
+/* body::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
     background-color: #040735;
@@ -36,7 +37,7 @@ body::-webkit-scrollbar-thumb{
 
 body {
     background-color: #010438;
-}
+} */
 
 /** menu **/
 .logo {

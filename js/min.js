@@ -1,23 +1,23 @@
 var TIME_OUT = 100;
 
-reveal = function() {
-  var reveals = document.querySelectorAll(".reveal");
+effect = function() {
+  var effects = document.querySelectorAll(".reveal,.zoom");
 
-  for (var i = 0; i < reveals.length; i++) {
+  for (var i = 0; i < effects.length; i++) {
     var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementTop = effects[i].getBoundingClientRect().top;
     var elementVisible = 50;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
+      effects[i].classList.add("active");
     } else {
-      reveals[i].classList.remove("active");
+      effects[i].classList.remove("active");
     }
   }
 }
 
 window.onscroll = function() {
-  setTimeout(function(){ reveal(); }, TIME_OUT);
+  setTimeout(function(){ effect(); }, TIME_OUT);
 }
 
 
