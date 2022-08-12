@@ -17,6 +17,9 @@ a, a:active, a:visited, a:hover {
 .padding_10_30 {
     padding: 10px 30px;
 }
+.padding_top_70 {
+    padding-top:70px;
+}
 .padding_top_140 {
     padding-top:140px;
 }
@@ -167,14 +170,13 @@ border-radius: 80px 80px 0px 0px;
     left: 500px;
     top: 530px;
 }
-
 .coinflow.wemove.coin1 {
-    top: 160px;
     left: 20%;
+    top: 53px;
 }
 .coinflow.wemove.coin2 {
     left: 640px;
-    top: 503px;
+    top: 405px;
 }
 
 .coinflow.play.circle1 {
