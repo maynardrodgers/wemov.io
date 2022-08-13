@@ -121,6 +121,10 @@ border-radius: 80px 80px 0px 0px;
 
 .btn {
     cursor: pointer; 
+    transition: all .2s ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.05);
 }
 .btn.btn_run {
     color: white;
@@ -218,13 +222,9 @@ border-radius: 80px 80px 0px 0px;
 .header.menu > .menu-app{
     position: relative;
     display: inline-block;
-    left: 80%;
+    float:right;
     top: -55px;
     transition: all 2s ease-in-out;
-}
-
-.header.menu > .menu-app > .btn:hover {
-    transform: scale(1.15)
 }
 
 .header.menu > .menu-center {
@@ -662,7 +662,7 @@ img.socal {
 }
 .reveal_right{
     position: relative;
-    transform: translateX(150px);
+    transform: translateX(30px);
     opacity: 0;
     transition: 1s all ease;
 }
