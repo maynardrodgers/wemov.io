@@ -1,7 +1,7 @@
 var TIME_OUT = 100;
 
 effect = function() {
-  var effects = document.querySelectorAll(".reveal,.zoom");
+  var effects = document.querySelectorAll(".reveal,.zoom,.reveal_left,.reveal_right,.face_out");
 
   for (var i = 0; i < effects.length; i++) {
     var windowHeight = window.innerHeight;
@@ -47,6 +47,9 @@ window.onload = function() {
   $('#btn-up').click(function(){
     topFunction();
   })
+
+  //first load 
+  setTimeout(function(){ effect(); }, TIME_OUT);
 };
 
 function topFunction() {

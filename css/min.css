@@ -23,6 +23,9 @@ a, a:active, a:visited, a:hover {
 .padding_top_140 {
     padding-top:140px;
 }
+.padding_top_210 {
+    padding-top:210px;
+}
 .padding_top_30 {
     padding-top: 30px;
 }
@@ -34,6 +37,9 @@ a, a:active, a:visited, a:hover {
 }
 .padding_bottom_140 {
     padding-bottom:140px;
+}
+.padding_bottom_210 {
+    padding-bottom:210px;
 }
 .padding_bottom_70 {
     padding-bottom:70px;
@@ -160,35 +166,34 @@ border-radius: 80px 80px 0px 0px;
 }
 .coinflow.wemove.circle1 {
     left: 986px;
-    top: 64px;
+    top: 12px;
 }
 .coinflow.wemove.circle2 {
-    left: 173px;
-    top: 117px;
+    left: -120px;
+    top: 70px;
 }
 .coinflow.wemove.circle3 {
-    left: 500px;
-    top: 530px;
+    left: 300px;
+    top: 550px;
 }
 .coinflow.wemove.coin1 {
-    left: 20%;
-    top: 53px;
+    left: -05%;
+    top: 160px;
 }
 .coinflow.wemove.coin2 {
-    left: 640px;
-    top: 405px;
+    left: 30%;
+    top: 510px;
 }
-
 .coinflow.play.circle1 {
-    left: 986px;
+    left: 725px;
     top: 64px;
 }
 .coinflow.play.circle2 {
     left: 173px;
-    top: 117px;
+    top: 253px;
 }
 .coinflow.play.circle3 {
-    left: 500px;
+    left: 1200px;
     top: 530px;
 }
 .coinflow.hand {
@@ -200,13 +205,7 @@ border-radius: 80px 80px 0px 0px;
     float: right;
     background-repeat: no-repeat;
 }
-/*home socal*/
-.home-socal {
-    display: inline-block;
-    position: relative;
-    float: left;
-    top: 150px;
-}
+
 
 /* headr menu */
 .header.menu > .logo{
@@ -274,7 +273,7 @@ h2.tit {
     color:#FAFAFC;
 }
 h4.des {
-    color: #DADFF1;
+    color: #FAFAFC;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -322,12 +321,18 @@ h4.des {
 }
 .home > .home-wemove {
     display: inline-block;
-    position: relative;
     float: right;
     min-width: 200px;
-    top: 150px;
+    position: relative;
+    top: -800px;
 }
-
+/*home socal*/
+.home-socal {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: -800px;
+}
 .row-data {
     padding: 20px 30px;
     background: rgba(237, 252, 251, 0.08);
@@ -645,6 +650,26 @@ img.socal {
 /*effect blur*/
 
 /*effect */
+.reveal_left{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal_left.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.reveal_right{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal_right.active{
+    transform: translateX(0);
+    opacity: 1;
+}
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -654,6 +679,16 @@ img.socal {
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
+}
+.face_out {
+    opacity: 0;
+}
+.face_out.active {
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 1;
 }
 .top {
   position: fixed;

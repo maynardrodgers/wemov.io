@@ -230,7 +230,7 @@ h2.tit {
     color: #FAFAFC;
 }
 h4.des {
-    color: #DADFF1;
+    color: #FAFAFC;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -346,17 +346,8 @@ h4.des {
     height: 150px;
     margin: 0 auto;
 }
+
 /*effect */
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-}
-.reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-}
 .menu-body {
     transform: translateX(0%);
     opacity: 1;
@@ -367,12 +358,51 @@ h4.des {
     opacity: 0;
     transition: 1s all ease;
 }
-.top {
-    position: fixed;
-    bottom: 20px;
-    right: 60px;
+.reveal_left{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
 }
-
+.reveal_left.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.reveal_right{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal_right.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.face_out {
+    opacity: 0;
+}
+.face_out.active {
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 1;
+}
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+}
 .zoom{
     position: relative;
     transform: scale(0.1);
@@ -397,7 +427,7 @@ h4.des {
     100% {
     transform: scale(1, 1);
     }
-}  
+}
 /*effect */
 
 /*Slide*/
