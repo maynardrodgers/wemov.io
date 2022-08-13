@@ -86,6 +86,18 @@ body {
 .menu-app {
     max-width: 300px;
     margin: auto;
+
+    color: white;
+    font-family: 'Allan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 10px 20px;
+    background: #ed712f;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 10px;
 }
 .data-socal > .socal {
     width:32px;
@@ -234,11 +246,12 @@ h2.tit {
     color: #FAFAFC;
 }
 h4.des {
-    color: #FAFAFC;
+    color: #FFFFFF;
+    font-family: 'Mulish';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
 }
 .row {
     display: flex;
